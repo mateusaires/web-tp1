@@ -1,69 +1,132 @@
 <!DOCTYPE html>
 <html>
-<!-- Adicionar Subtitulos em tudo -->
-	<head>
-		<meta charset="UTF-8">
-		<!-- Adicionar Imagem inicial -->
-	</head>
-	<body>
-		<nav>
-			<h1>San Goku</h1>
-			<ul>
-				<li><a href="#inicio">HOME</a></li>
-				<li><a href="#sobreMim">SOBRE MIM</a></li>
-				<li><a href="#projetos">PROJETOS</a></li>
-				<li><a href="#curriculo">CURRÍCULO</a></li>
-				<li><a href="#contato">CONTATO</a></li>
-			</ul>
-		</nav>
-		<article id="inicio">
-			<div class="fraseInicio">
-				<h1>"Oi, eu sou o Goku!"</h1>
-				<h2>Goku</h2>
-			</div>
-			<div class="fraseInicio">
-				<h1>"É de mais de oito mil!"</h1>
-				<h2>Vegeta, sobre o poder de Goku</h2>
-			</div>
-			<div class="fraseInicio">
-				<h1>"Sou a resposta a todas as coisas viventes que rogam pela paz."</h1>
-				<h2>Goku para Freeza</h2>
-			</div>
-		</article>
-		<article id="sobreMim">
-			<h1>SOBRE MIM</h1>
-			<p>Conhecido popularmente apenas por Goku, me chamo San Goku e sou um lutador profissional. Originalmente batizado como Kakarotto, sou membro de uma raça de extraterrestres, os poderosos Sayajns.</p>
-			<p>Tive uma infância e adolescência traumática: fui enviado ainda menino para um outro planeta em uma missao assassina, mas devido a uma pancada na cabeça, esqueci qual era a missão dada a mim por meu povo. Para completar, meu irmão veio me visitar e acabou me matando. Finalmente, após tudo resolvido com a família, acabei tendo minha cauda removida numa briga (é, eu tinha uma!) e, para não morrer de ócio, segui esse caminho árduo que é lutar, comer e sair voando por aí.</p>
-			<p> Manjo muito dos paranauê quando o lance é descer a lenha e soltar uns laser, piscar de vermelho e amarelo, teleportar e tingir os cabelos de louro. De tempos em tempos, dou uma de arqueólogo com uns amigos do treino e saio buscando por esse mundo um conjunto de artefatos antigos, umas esferas amarelas com estrelinhas vermelhas, chamadas de 'As Bolas do Dragão' (ui).</p>
-			<p>Curiosamente, mesmo sem nenhuma informação dos governos do mundo sobre a existência de extraterrestres, seguindo essa carreira eu já bati em tanto cara verde, roxo, amarelo, rosa, branco, com cauda, com chifre, com gosma e com naves espaciais em campeonatos nacionais de artes marciais que às vezes me pergunto se eles estão escondendo alguma coisa de nós... Talvez minha amiga Bulma tenha uma explicação científica para o fato.</p>
-			<p>Ah sim, quase ia me esquecendo: sou pai de um garotinho, Gohan, tão pica das galáxias quanto eu. Bate demais aquele moleque, orgulho do pai.</p>
-		</article>
-		<article id="projetos">
-			<h1>PROJETOS</h1>
-			<ul>
-				<li>Coordenador da 37ª busca comunitária pelas Esferas do Dragão</li>
-				<li>Coordenador da “Maratona Corpo do Verão na Câmara de Gravidade da Bulma – Tanquinho definido com sete dias de Nível 12”</li>
-				<li>Professor do curso “Estado Vegeta Ativo: mantendo o pique na terceira idade”</li>
-				<li>Autor do livro “Técnicas de Meditação e Respiração: Nem toda energia acumulada precisa virar um Kamehamehá”</li>
-				<li>Criador do grupo de apoio “Somos Saia Jeans”, em defesa da comunidade LGBT de lutadores, androids e extraterrestres.</li>
-				<li>Criador do minicurso de controle de raiva “Cortando o mal pela cauda: Controlando o Gorila Interior”</li>
-				<li>Participação especial no Seminário Saint Seya de Reincarnações Múltiplas, ministrando os cursos “Teletransporte: Um atalho no Caminho da Serpente” e “Lá e de volta: soluções para o estresse pós-traumático”</li>
-				<li>Garoto Propaganda da Avon, para a linha de produtos “Blondie Blast: loiros brilhantes para noites brilhantes”</li>
-				<li>Fundação da Igreja Internacional do Reino de Goku</li>
-			</ul>
-		</article>
-		<article id="curriculo">
-			<h1>Currículo</h1>
-			<p>Mestre em Educação Física pela KSU (Kami Sama University): Tese “Esportes Terrestres para Terráqueos Voadores: Adaptações Didáticas”</p>
-			<p>Professor de Educação Física na UFMG (Universidade Federal de Minas Gerais)</p>
-			<p>Vice Campeão no 31º Torneio Mundial de Artes Marciais</p>
-			<p>Curso de Proteção de Terceiros “De novo não, Kuririn”, 90 horas - UFNN</p>
-			<p>Curso de Treinamento Intensivo “Mr Satan em três lições”, 20 horas - UFMG</p>
-		</article>
-		<article id="contato">
-			<h1>Contato</h1>
-		</article>
-	</body>
+    <head>
+        <!-- required for bootsrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap -->
+        <link media="screen" href="css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-2.1.4.js"></script><!-- required by Bootsrap -->
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <!-- meus -->
+        <link rel="icon" type="image/x-icon" href="imgs/single_dragon_ball.ico">
+        <link media="screen" rel="stylesheet" type="text/css" href="css/screenStyle.css">
+        <link media="print" rel="stylesheet" type="text/css" href="css/printStyle.css">
+        <title>Son Goku Portfolio</title>
+    </head>
+    <body data-spy="scroll" data-target="#conteudoNavBar">
+        <header>
+        <!-- navigation -->
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#conteudoNavBar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Brand</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div id="conteudoNavBar" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="active"><a href="#inicio">HOME</a></li>
+                            <li><a href="#sobreMim">SOBRE MIM</a></li>
+                            <li><a href="#projetos">PROJETOS</a></li>
+                            <li><a href="#curriculo">CURRÍCULO</a></li>
+                            <li><a href="#contato">CONTATO</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container -->
+            </nav>
+        </header>
+        <!-- corpo -->
+        <article id="inicio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6">
+                        <div class="mySlider">
+                            <div class="sliderContent">
+                                <h4>"Oi, eu sou o Goku!"<small>Goku</small></h4>
+                            </div>
+                            <div class="sliderContent">
+                                <h4>"É de mais de oito mil!"<small>Vegeta, sobre o poder de Goku</small></h4>
+                            </div>
+                            <div class="sliderContent">
+                                <h4>"Sou a resposta a todas as coisas viventes que rogam pela paz."<small>Goku para Freeza</small></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <img class="img-responsive" alt="Imagem do Goku" src="imgs/goku_entry.png" />
+                    </div>
+                </div>
+                
+                
+
+            </div>
+        </article>
+        <article id="sobreMim">
+            <h1>SOBRE MIM</h1>
+            <img id="printOnlyImg" alt="Imagem da Face do Goku" src="imgs/goku_face_PRINT.png" />
+            <div class="container">
+                <div class="row" >
+                    <div class="col-md-12 colss-sm-12">
+                        <p>Conhecido popularmente apenas por Goku, me chamo San Goku e sou um lutador profissional. Originalmente batizado como Kakarotto, sou membro de uma raça de extraterrestres, os poderosos Sayajns.</p>
+                        <p>Tive uma infância e adolescência traumática: fui enviado ainda menino para um outro planeta em uma missao assassina, mas devido a uma pancada na cabeça, esqueci qual era a missão dada a mim por meu povo. Para completar, meu irmão veio me visitar e acabou me matando. Finalmente, após tudo resolvido com a família, acabei tendo minha cauda removida numa briga (é, eu tinha uma!) e, para não morrer de ócio, segui esse caminho árduo que é lutar, comer e sair voando por aí.</p>
+                        <p> Manjo muito dos paranauê quando o lance é descer a lenha e soltar uns laser, piscar de vermelho e amarelo, teleportar e tingir os cabelos de louro. De tempos em tempos, dou uma de arqueólogo com uns amigos do treino e saio buscando por esse mundo um conjunto de artefatos antigos, umas esferas amarelas com estrelinhas vermelhas, chamadas de 'As Bolas do Dragão' (ui).</p>
+                        <p>Curiosamente, mesmo sem nenhuma informação dos governos do mundo sobre a existência de extraterrestres, seguindo essa carreira eu já bati em tanto cara verde, roxo, amarelo, rosa, branco, com cauda, com chifre, com gosma e com naves espaciais em campeonatos nacionais de artes marciais que às vezes me pergunto se eles estão escondendo alguma coisa de nós... Talvez minha amiga Bulma tenha uma explicação científica para o fato.</p>
+                        <p>Ah sim, quase ia me esquecendo: sou pai de um garotinho, Gohan, tão pica das galáxias quanto eu. Bate demais aquele moleque, orgulho do pai.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="projetos">
+            <h1>PROJETOS</h1>
+            <ul>
+                <li>Coordenador da 37ª busca comunitária pelas Esferas do Dragão</li>
+                <li>Coordenador da “Maratona Corpo do Verão na Câmara de Gravidade da Bulma – Tanquinho definido com sete dias de Nível 12”</li>
+                <li>Professor do curso “Estado Vegeta Ativo: mantendo o pique na terceira idade”</li>
+                <li>Autor do livro “Técnicas de Meditação e Respiração: Nem toda energia acumulada precisa virar um Kamehamehá”</li>
+                <li>Criador do grupo de apoio “Somos Saia Jeans”, em defesa da comunidade LGBT de lutadores, androids e extraterrestres.</li>
+                <li>Criador do minicurso de controle de raiva “Cortando o mal pela cauda: Controlando o Gorila Interior”</li>
+                <li>Participação especial no Seminário Saint Seya de Reincarnações Múltiplas, ministrando os cursos “Teletransporte: Um atalho no Caminho da Serpente” e “Lá e de volta: soluções para o estresse pós-traumático”</li>
+                <li>Garoto Propaganda da Avon, para a linha de produtos “Blondie Blast: loiros brilhantes para noites brilhantes”</li>
+                <li>Fundação da Igreja Internacional do Reino de Goku</li>
+            </ul>
+        </article>
+        <article id="curriculo">
+            <h1>CURRÍCULO</h1>
+            <ul>
+                <li>Mestre em Educação Física pela KSU (Kami Sama University): Tese “Esportes Terrestres para Terráqueos Voadores: Adaptações Didáticas”</li>
+                <li>Professor de Educação Física na UFMG (Universidade Federal de Minas Gerais)</li>
+                <li>Vice Campeão no 31º Torneio Mundial de Artes Marciais</li>
+                <li>Curso de Proteção de Terceiros “De novo não, Kuririn”, 90 horas - UFNN (Universidade Federal de Namekusei do Norte)</li>
+                <li>Curso de Treinamento Intensivo “Mr Satan em três lições”, 20 horas - UFMG (Universidade Federal de Minas Gerais)</li>
+            </ul>
+            <br>
+            <p><a href="files/curriculo_goku.pdf" target="_blank">Versão completa</a></p>
+        </article>
+        <article id="contato">
+            <h1>CONTATO</h1>
+            <address>
+                <strong>Endereço:</strong><br>
+                UFMG - Escola de Educação Física, Fisioterapia e Terapia Ocupacional<br>
+                Av. Pres. Antônio Carlos, 6627 Campus Pampulha<br>
+                Belo Horizonte - MG CEP 31270-901<br>
+            </address>
+            <address>
+                <strong>Teleone:</strong><br>
+                (31) 3409-6744<br>
+            </address>
+            <address>
+                <strong>Email:</strong><br>
+                <a href="mailto:mailto:sangoku@ufmg.br" target="_top">sangoku@ufmg.br</a><br>
+            </address>
+        </article>
+    </body>
 </html>
 Exemplos
 

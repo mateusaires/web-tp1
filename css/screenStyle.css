@@ -1,0 +1,76 @@
+body {
+    position: relative;
+    height: 100%;
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+h1{
+    margin-top: 0;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mySlider h4{
+    color: white;
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1);
+    text-align: center;
+    font-size: 2.1em
+}
+.mySlider small{
+    display: block;
+    color: rgba(220,220,220,0.85);
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+    text-shadow: none;
+}
+
+#printOnlyImg{
+	display:none;
+}
+
+#inicio {
+	background-image: url("../imgs/inicio_wallpaper_edit.jpg");
+    background-size: cover;
+}
+
+#sobreMim {
+    background-image: url("../imgs/sobreMim_candidate.jpg");
+    background-size: cover;
+    
+}
+
+@media(min-width:768px){
+
+    #sobreMim .row{
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count:    2; /* Firefox */
+        column-count:         2;
+        -webkit-column-gap:   20px; /* Chrome, Safari, Opera */ 
+        -moz-column-gap:      20px; /* Firefox */
+        column-gap:           20px;
+        column-rule-color: #ccc; /* Optional */
+        column-rule-style:solid; /* Optional */
+        column-rule-width: 1px; /* Optional */
+        text-align: justify; /* Optional */
+    }
+    
+}
+
+#projetos {
+	background-image: url("../imgs/projetos_wallpaper.jpg");
+    background-size: cover;
+}
+
+#curriculo {
+    background-image: url("../imgs/curriculo_wallpaper_alt.JPG");
+    background-size: cover;
+    text-shadow: 0 0 1px rgba(255,255,255,1) ;
+}
+
+#contato {
+    background-image: url("../imgs/contato_wallpaper_edit.jpg");
+    background-size: cover;
+}

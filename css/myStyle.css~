@@ -1,0 +1,53 @@
+body {
+	background-color: #cccccc;
+	color:white;
+	background-color:black;
+	font-family:sans-serif;
+}
+
+nav ul {
+	list-style-type:none;
+}
+
+
+.content_width_container{
+	width:60%;
+	margin: 0 auto;
+	position:relative;
+}
+.content_width_container:after{
+	content: "";
+  	clear: both;
+  	display: table;
+}
+
+#inicio {
+	background-image: url("imgs/inicio_wallpaper_edit.jpg");
+}
+.imgWrapper{
+	width:40%;
+	height:100%;
+	float:right;
+}
+#inicio img{
+	float:right;
+	display:inline-block;
+	vertical-align:bottom;
+	width:40%;
+}
+
+#sobreMim {
+
+}
+
+#projetos {
+	background-image: url("imgs/projetos_wallpaper.jpg");
+}
+
+#curriculo {
+
+}
+
+#contato {
+
+}

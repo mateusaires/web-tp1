@@ -69,25 +69,79 @@ function printRota(position) {
       directionsDisplay.setDirections(response);
     }
   });
+    getCurrentWeatherData(position);
 }
 
-function printRotaAntiga(){
-    navigator.geolocation.getCurrentPosition(function(position){
-        clientLongitude = position.coords.longitude
-        clientLatitude = position.coords.latitude;
-    });
-    var origemRota = new google.maps.LatLng(clientLatitude,clientLongitude);
-    var mapOptions = {
-        origin: origemRota,
-        destination: localAtual,
-        travelMode: google.maps.TravelMode.DRIVING
-    };
-    directionsService.route(mapOptions, function(response, status) {
-    if (status == google.maps.DirectionsStatus.OK) {
-      directionsDisplay.setDirections(response);
-    }
-  });
+
+//Previsão de Tempo
+
+//current weather URL
+var BASE_URL = "http://api.openweathermap.org/data/2.5/weather?";
+var UrlParams = "&lang=pt&units=metric&type=accurate&mode=json";
+// Image base URL
+var IMG_URL = "http://openweathermap.org/img/w/";
+
+// get the Current Weather for User location
+function getCurrentWeatherData(position) {
+	// Build the OpenAPI URL for current Weather
+	var WeatherNowAPIurl = BASE_URL + "lat=" + position.coords.latitude
+			+ "&lon=" + position.coords.longitude + UrlParams;
+	// OpenWeather API call for Current Weather
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			var JSONobj = JSON.parse(xmlhttp.responseText);
+			Parse(JSONobj);
+		}
+	}
+	xmlhttp.open("GET", WeatherNowAPIurl, true);
+	xmlhttp.send();
+
 }
+// display the current weather and location
+function Parse(obj) {
+
+	// current weather
+	document.getElementById("weatherNow").innerHTML = "<img src='" + IMG_URL
+			+ obj.weather[0].icon + ".png'> " + " Condição: "
+			+ obj.weather[0].description + " | " + "Temp: " + obj.main.temp
+			+ " C | " + "Vento: "
+			+ (3.6*obj.wind.speed).toFixed(2).replace(/0+$/,'') + " km/s";
+    
+    if(obj.weather[0].id<=200&&obj.weather[0].id>=321){
+        //condições extremas
+        document.getElementById("mapTitle").innerHTML = "Não venha me encontrar!!";
+        document.getElementById("mapSubtitle").innerHTML = "Esse é o caminho, mas as condições climáticas estão perigosas hoje, e nem todo mundo é sayajin pra sair assim...";
+    }else{
+        if(obj.weather[0].id<=200&&obj.weather[0].id>=232){
+        //Tempestade perigosa
+            document.getElementById("mapTitle").innerHTML = "Estou aqui!";
+        document.getElementById("mapSubtitle").innerHTML = "Se vier me econtrar, tenha cuidado: Tempestade lá fora!";
+        }else{
+            if(obj.weather[0].id<=300&&obj.weather[0].id>=531){
+                //chuva
+                document.getElementById("mapTitle").innerHTML = "Que tal um café nessa chuva?";
+        document.getElementById("mapSubtitle").innerHTML = "Afinal, ninguém é feito de açúcar (falar é fácil, pra quem sabe teleportar, hehe)";
+            }else{
+                if(obj.weather[0].id<=600&&obj.weather[0].id>=622){
+                    //neve
+                    document.getElementById("mapTitle").innerHTML = "Venha tomar um chocolate quente comigo!";
+        document.getElementById("mapSubtitle").innerHTML = "Nada melhor com essa neve toda lá fora...";
+                }else{
+                    if(obj.main.temp<=22){
+                        document.getElementById("mapSubtitle").innerHTML = "Mas traga um agasalho, está um pouco frio.";
+                    }else{
+                        document.getElementById("mapSubtitle").innerHTML = "Estou esperando você! :D";
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
+
+
 
 
 //carrega o mapa após o carregamento da página

@@ -192,3 +192,7 @@ h1{
     min-height: 40vh;
     min-width: 40vw;
 }
+
+#weatherNow{
+    background-color: azure;
+}

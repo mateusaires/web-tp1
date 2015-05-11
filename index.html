@@ -13,6 +13,9 @@
         <link media="screen" rel="stylesheet" type="text/css" href="css/screenStyle.css">
         <link media="print" rel="stylesheet" type="text/css" href="css/printStyle.css">
         <title>Son Goku Portfolio</title>
+        <!-- Scripts -->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+        <script src="js/mapRelated.js"></script>
     </head>
     <body data-spy="scroll" data-target="#conteudoNavBar">
         <header>
@@ -73,7 +76,7 @@
             <img id="printOnlyImg" alt="Imagem da Face do Goku" src="imgs/goku_face_PRINT.png" />
             <div class="container">
                 <div class="row" >
-                    <div class="col-md-12 colss-sm-12">
+                    <div class="col-md-12 col-sm-12">
                         <p>Conhecido popularmente apenas por Goku, me chamo San Goku e sou um lutador profissional. Originalmente batizado como Kakarotto, sou membro de uma raça de extraterrestres, os poderosos Sayajns.</p>
                         <p>Tive uma infância e adolescência traumática: fui enviado ainda menino para um outro planeta em uma missao assassina, mas devido a uma pancada na cabeça, esqueci qual era a missão dada a mim por meu povo. Para completar, meu irmão veio me visitar e acabou me matando. Finalmente, após tudo resolvido com a família, acabei tendo minha cauda removida numa briga (é, eu tinha uma!) e, para não morrer de ócio, segui esse caminho árduo que é lutar, comer e sair voando por aí.</p>
                         <p> Manjo muito dos paranauê quando o lance é descer a lenha e soltar uns laser, piscar de vermelho e amarelo, teleportar e tingir os cabelos de louro. De tempos em tempos, dou uma de arqueólogo com uns amigos do treino e saio buscando por esse mundo um conjunto de artefatos antigos, umas esferas amarelas com estrelinhas vermelhas, chamadas de 'As Bolas do Dragão' (ui).</p>
@@ -111,20 +114,34 @@
         </article>
         <article id="contato">
             <h1>CONTATO</h1>
-            <address>
-                <strong>Endereço:</strong><br>
-                UFMG - Escola de Educação Física, Fisioterapia e Terapia Ocupacional<br>
-                Av. Pres. Antônio Carlos, 6627 Campus Pampulha<br>
-                Belo Horizonte - MG CEP 31270-901<br>
-            </address>
-            <address>
-                <strong>Teleone:</strong><br>
-                (31) 3409-6744<br>
-            </address>
-            <address>
-                <strong>Email:</strong><br>
-                <a href="mailto:mailto:sangoku@ufmg.br" target="_top">sangoku@ufmg.br</a><br>
-            </address>
+            <div class="container">
+                <div class="row" id="mapRow">
+                    <h3 id="mapTitle"></h3>
+                    <h4 id="mapSubtitle"></h4>
+                   <div id="mapDiv" class="col-md-12 col-sm-12"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <address>
+                            <strong>Endereço:</strong><br>
+                            UFMG - Escola de Educação Física, Fisioterapia e Terapia Ocupacional<br>
+                            Av. Presidente Carlos Luz, 3502 - Campus Pampulha<br>
+                            Belo Horizonte - MG CEP 31270-901<br>
+                        </address>
+                        <address>
+                            <strong>Teleone:</strong><br>
+                            (31) 3409-6744<br>
+                        </address>
+                        <address>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:mailto:sangoku@ufmg.br" target="_top">sangoku@ufmg.br</a><br>
+                        </address>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        COLOCAR TAGS SOCIAIS COM TRANSIÇÕES CSS
+                    </div>
+                </div>
+            </div>
         </article>
     </body>
 </html>

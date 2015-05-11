@@ -7,23 +7,28 @@ font-family: 'Permanent Marker', cursive;
 body {
     position: relative;
     height: 100%;
-    padding-top: 50px;
     font-weight: bold;
     font-family: 'Permanent Marker', cursive;
 }
-
 article {
     min-height: 100vh;
     position: relative;
 }
 
-#inicio .container{
+
+
+
+@media(min-width:768px){
+
+    #inicio .container{
     position: absolute;
     bottom:0;
     left:0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+}
+    
 }
 
 h1{
@@ -53,6 +58,7 @@ h1{
 }
 
 #inicio {
+    padding-top: 80px;
 	background-image: url("../imgs/inicio_wallpaper_edit.jpg");
     background-size: cover;
 }

@@ -1,8 +1,15 @@
+/*
+webfont
+font-family: 'Permanent Marker', cursive;
+*/
+
+
 body {
     position: relative;
     height: 100%;
     padding-top: 50px;
     font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
 }
 
 h1{
@@ -27,7 +34,7 @@ h1{
     text-shadow: none;
 }
 
-#printOnlyImg{
+#gokuFace{
 	display:none;
 }
 
@@ -39,7 +46,6 @@ h1{
 #sobreMim {
     background-image: url("../imgs/sobreMim_candidate.jpg");
     background-size: cover;
-    
 }
 
 @media(min-width:768px){
@@ -64,13 +70,85 @@ h1{
     background-size: cover;
 }
 
+#projetos .thumbnail img{
+    width: 100%;
+    height: 90%;
+}
+#projetos .thumbnail{
+    overflow: hidden;
+    height: 300px
+}
+
 #curriculo {
     background-image: url("../imgs/curriculo_wallpaper_alt.JPG");
     background-size: cover;
     text-shadow: 0 0 1px rgba(255,255,255,1) ;
 }
+#curriculo p{
+    text-align: center;
+}
 
 #contato {
     background-image: url("../imgs/contato_wallpaper_edit.jpg");
     background-size: cover;
+}
+
+#contato #mapDiv{
+    height: 350px;
+}
+
+#socialMedias{
+    list-style: none;
+}
+
+#socialMedias .fa{
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 1.5em;
+    color:ghostwhite;
+    background-color: dimgray;
+    padding: 9px;
+    padding-left: 12px;
+    width: 40px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius:7px;
+    /*Transition*/
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.5s ease;
+}
+
+#socialMedias .fa:before{
+    padding-right: 20px;
+}
+
+#socialMedias .fa:hover{
+    width: 160px;
+}
+
+#socialMedias #facebookLink:hover{
+    background-color: #3b5998;
+}
+
+#socialMedias #twitterLink:hover{
+    color: #55acee;
+    background-color: ghostwhite;
+}
+
+#socialMedias #googlePlusLink:hover{
+    color: #dd4b39;
+    background-color: ghostwhite;
+}
+
+#socialMedias #pinterestLink:hover{
+    color: #cc2127;
+    background-color: ghostwhite;
+}
+
+#socialMedias #linkedInLink:hover{
+    color: white;
+    background-color: #0976b4;
 }

@@ -12,13 +12,16 @@
         <link rel="icon" type="image/x-icon" href="imgs/single_dragon_ball.ico">
         <link media="screen" rel="stylesheet" type="text/css" href="css/screenStyle.css">
         <link media="print" rel="stylesheet" type="text/css" href="css/printStyle.css">
-        <title>Son Goku Portfolio</title>
+        <!-- WEBFONT -->
+        <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+        <title>San Goku Portfolio</title>
         <!-- Scripts -->
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
         <script src="js/mapRelated.js"></script>
     </head>
     <body data-spy="scroll" data-target="#conteudoNavBar">
-        <header>
+        <header class="print-hide">
         <!-- navigation -->
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="container">
@@ -29,7 +32,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Brand</a>
+                        <p class="navbar-brand" >San Goku</p>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,7 +49,7 @@
             </nav>
         </header>
         <!-- corpo -->
-        <article id="inicio">
+        <article id="inicio" class="print-hide">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-sm-6">
@@ -73,7 +76,7 @@
         </article>
         <article id="sobreMim">
             <h1>SOBRE MIM</h1>
-            <img id="printOnlyImg" alt="Imagem da Face do Goku" src="imgs/goku_face_PRINT.png" />
+            <img id="gokuFace" alt="Imagem da Face do Goku" src="imgs/goku_face_PRINT.png" />
             <div class="container">
                 <div class="row" >
                     <div class="col-md-12 col-sm-12">
@@ -88,38 +91,142 @@
         </article>
         <article id="projetos">
             <h1>PROJETOS</h1>
-            <ul>
-                <li>Coordenador da 37ª busca comunitária pelas Esferas do Dragão</li>
-                <li>Coordenador da “Maratona Corpo do Verão na Câmara de Gravidade da Bulma – Tanquinho definido com sete dias de Nível 12”</li>
-                <li>Professor do curso “Estado Vegeta Ativo: mantendo o pique na terceira idade”</li>
-                <li>Autor do livro “Técnicas de Meditação e Respiração: Nem toda energia acumulada precisa virar um Kamehamehá”</li>
-                <li>Criador do grupo de apoio “Somos Saia Jeans”, em defesa da comunidade LGBT de lutadores, androids e extraterrestres.</li>
-                <li>Criador do minicurso de controle de raiva “Cortando o mal pela cauda: Controlando o Gorila Interior”</li>
-                <li>Participação especial no Seminário Saint Seya de Reincarnações Múltiplas, ministrando os cursos “Teletransporte: Um atalho no Caminho da Serpente” e “Lá e de volta: soluções para o estresse pós-traumático”</li>
-                <li>Garoto Propaganda da Avon, para a linha de produtos “Blondie Blast: loiros brilhantes para noites brilhantes”</li>
-                <li>Fundação da Igreja Internacional do Reino de Goku</li>
-            </ul>
+            
+            <div class="container">
+                <div class="row">
+                    
+                    
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <p>Coordenador da 37ª busca comunitária pelas Esferas do Dragão</p>
+                            <img class="img-responsive print-hide" src="imgs/projetos/busca_esferas.jpg" alt="Esferas do Dragão"> 
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <p>Coordenador da “Maratona Corpo do Verão na Câmara de Gravidade da Bulma – Tanquinho definido com sete dias de Nível 12”</p>
+                            <img class="img-responsive print-hide" src="imgs/projetos/goku_abs.png" alt="Abdômen de Goku">
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <p>Professor do curso “Estado Vegeta Ativo: mantendo o pique na terceira idade”</p>
+                            <img class="img-responsive print-hide" src="imgs/projetos/vegeta_ativo.jpg" alt="Mestre Kame Bombado">
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <p>Autor do livro “Técnicas de Meditação e Respiração: Nem toda energia acumulada precisa virar um Kamehamehá”</p>
+                            <img class="img-responsive print-hide" src="imgs/projetos/goku_meditando.jpg" alt="Goku Meditando">
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <p>Criador do grupo de apoio “Somos Saia Jeans”, em defesa da comunidade LGBT de lutadores, androids e extraterrestres.</p>
+                            <img class="img-responsive print-hide" src="imgs/projetos/saia_jeans.jpg" alt="Lutadores Homosexuais">
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <p>Criador do minicurso de controle de raiva “Cortando o mal pela cauda: Controlando o Gorila Interior”</p>
+                            <img class="img-responsive print-hide" src="imgs/projetos/goku_cauda.png" alt="Gocku com Cauda">
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <p>Participação especial no Seminário Saint Seya de Reincarnações Múltiplas, ministrando os cursos “Teletransporte: Um atalho no Caminho da Serpente” e “Lá e de volta: soluções para o estresse pós-traumático”</p>
+                            <img class="img-responsive print-hide" src="imgs/projetos/saint_seiya.png" alt="Cavaleiros do Zodíaco">
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <p>Garoto Propaganda da Avon, para a linha de produtos “Blondie Blast: loiros brilhantes para noites brilhantes”</p>
+                            <img class="img-responsive print-hide" src="imgs/projetos/blondie.jpg" alt="Loura">
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <p>Fundação da Igreja Internacional do Reino de Goku</p>
+                            <img class="img-responsive print-hide" src="imgs/projetos/salvador.jpg" alt="Jesus Salvador">
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
         </article>
         <article id="curriculo">
             <h1>CURRÍCULO</h1>
-            <ul>
-                <li>Mestre em Educação Física pela KSU (Kami Sama University): Tese “Esportes Terrestres para Terráqueos Voadores: Adaptações Didáticas”</li>
-                <li>Professor de Educação Física na UFMG (Universidade Federal de Minas Gerais)</li>
-                <li>Vice Campeão no 31º Torneio Mundial de Artes Marciais</li>
-                <li>Curso de Proteção de Terceiros “De novo não, Kuririn”, 90 horas - UFNN (Universidade Federal de Namekusei do Norte)</li>
-                <li>Curso de Treinamento Intensivo “Mr Satan em três lições”, 20 horas - UFMG (Universidade Federal de Minas Gerais)</li>
-            </ul>
-            <br>
-            <p><a href="files/curriculo_goku.pdf" target="_blank">Versão completa</a></p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <ul>
+                            <li>Mestre em Educação Física pela KSU (Kami Sama University): Tese “Esportes Terrestres para Terráqueos Voadores: Adaptações Didáticas”</li>
+                            <li>Professor de Educação Física na UFMG (Universidade Federal de Minas Gerais)</li>
+                            <li>Vice Campeão no 31º Torneio Mundial de Artes Marciais</li>
+                            <li>Curso de Proteção de Terceiros “De novo não, Kuririn”, 90 horas - UFNN (Universidade Federal de Namekusei do Norte)</li>
+                            <li>Curso de Treinamento Intensivo “Mr Satan em três lições”, 20 horas - UFMG (Universidade Federal de Minas Gerais)</li>
+                        </ul>
+                        <br>
+                        <p><a href="files/curriculo_goku.pdf" target="_blank">Versão completa do Currículo</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                    
+                    </div>
+                </div>
+            </div>
         </article>
         <article id="contato">
             <h1>CONTATO</h1>
             <div class="container">
-                <div class="row" id="mapRow">
-                    <h3 id="mapTitle"></h3>
-                    <h4 id="mapSubtitle"></h4>
-                   <div id="mapDiv" class="col-md-12 col-sm-12"></div>
+                <div class="row print-hide" id="mapRow">
+                    <div class="col-xs-12">
+                        <h3 id="mapTitle"></h3>
+                        <h4 id="mapSubtitle"></h4>
+                        <div id="mapDiv" class="col-md-12 col-sm-12"></div>
+                    </div>
                 </div>
+                <br>
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <address>
@@ -134,11 +241,17 @@
                         </address>
                         <address>
                             <strong>Email:</strong><br>
-                            <a href="mailto:mailto:sangoku@ufmg.br" target="_top">sangoku@ufmg.br</a><br>
+                            <a href="mailto:sangoku@ufmg.br" target="_top">sangoku@ufmg.br</a><br>
                         </address>
                     </div>
                     <div class="col-md-6 col-sm-6">
-                        COLOCAR TAGS SOCIAIS COM TRANSIÇÕES CSS
+                        <ul id="socialMedias" class="print-hide">
+                            <li><a href="https://www.facebook.com" id="facebookLink" class="socialMediaLink fa fa-facebook">Facebook</a></li>
+                            <li><a href="https://twitter.com/" id="twitterLink" class="socialMediaLink fa fa-twitter">Twitter</a></li>
+                            <li><a href="https://plus.google.com" id="googlePlusLink" class="socialMediaLink fa fa-google-plus">Google+</a></li>
+                            <li><a href="https://www.pinterest.com/" id="pinterestLink" class="socialMediaLink fa fa-pinterest">Pinterest</a></li>
+                            <li><a href="https://www.linkedin.com/" id="linkedInLink" class="socialMediaLink fa fa-linkedin">LinkedIn</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

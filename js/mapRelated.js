@@ -23,7 +23,6 @@ function initialize() {
     },
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
-    document.getElementById('mapDiv').style.height='350px'; //[[retirar e jogar pro padrão do css
     map = new google.maps.Map(document.getElementById("mapDiv"), options);
 
     var marker = new google.maps.Marker({

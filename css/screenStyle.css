@@ -66,6 +66,7 @@ h1{
 #sobreMim {
     background-image: url("../imgs/sobreMim_candidate.jpg");
     background-size: cover;
+    font-size: 1.4em;
 }
 
 @media(min-width:768px){
@@ -102,7 +103,7 @@ h1{
 }
 
 #curriculo {
-    background-image: url("../imgs/curriculo_wallpaper_alt.JPG");
+    background-image: url("../imgs/curriculo_wallpaper_alt.jpg");
     background-size: cover;
     text-shadow: 0 0 1px rgba(255,255,255,1) ;
 }
